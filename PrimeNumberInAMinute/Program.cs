@@ -24,8 +24,8 @@ namespace PrimeNumberInAMinute
             ThreadStart start = new ThreadStart(() =>
             {
                 FoundPrimeCallBack fPrimeCallBack = new FoundPrimeCallBack(FoundPrimeCallBack);
-                IMaxPrimeNumber maxPrimeNumber = new MaxPrimeNumber();
-                maxPrimeNumber.findMaxPrime(2500000000, fPrimeCallBack);
+                IMaxPrimeNumber maxPrimeNumber = new EratosMaxPrimeNumber();
+                maxPrimeNumber.findMaxPrime(1250000000, fPrimeCallBack);
             });
 
             Thread pt = new Thread(start);
