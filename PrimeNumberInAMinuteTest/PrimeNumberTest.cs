@@ -41,5 +41,44 @@ namespace PrimeNumberInAMinuteTest
             uint expect = 3;
             Assert.AreEqual(expect, actual);
         }
+
+
+        [TestMethod]
+        public void PrimeNumberNotGreater2WithEratos()
+        {
+            IMaxPrimeNumber iPN = new EratosMaxPrimeNumber();
+            uint actual = iPN.findMaxPrime(2, null);
+            uint expect = 2;
+            Assert.AreEqual(expect, actual);
+        }
+
+        [TestMethod]
+        public void PrimeNumberNotGreater3WithEratos()
+        {
+            IMaxPrimeNumber iPN = new EratosMaxPrimeNumber();
+            uint actual = iPN.findMaxPrime(3, null);
+            uint expect = 3;
+            Assert.AreEqual(expect, actual);
+        }
+
+        [TestMethod]
+        public void PrimeNumberNotGreater100WithEratos()
+        {
+            IMaxPrimeNumber iPN = new EratosMaxPrimeNumber();
+            uint actual = iPN.findMaxPrime(100, null);
+            uint expect = 97;
+            Assert.AreEqual(expect, actual);
+        }
+
+        [TestMethod]
+        public void PrimeNumberNotGreater113WithEratos()
+        {
+            IMaxPrimeNumber iPN = new EratosMaxPrimeNumber();
+            uint actual = iPN.findMaxPrime(113, null);
+            uint expect = 113;
+            Assert.AreEqual(expect, actual);
+        }
+
+
     }
 }
