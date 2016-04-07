@@ -37,7 +37,7 @@ namespace PrimeNumberInAMinute
                     currentPrime = i;
                     if (callback != null)
                         callback.Invoke(currentPrime);
-                    for (uint j = 2*i; j <= n; j = j + i)
+                    for (uint j = i*i; j <= n; j = j + i)
                     {
                         isPrimeArray[j] = false;
                     }
