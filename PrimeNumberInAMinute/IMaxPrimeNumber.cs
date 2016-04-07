@@ -10,7 +10,7 @@ namespace PrimeNumberInAMinute
 
     public interface IMaxPrimeNumber
     {
-        //Find max prime number less than n. During finding max prime number, callback function will trigger when a new prime is found.
+        //Find max prime number not greater than n. During finding max prime number, callback function will trigger when a new prime is found.
         uint findMaxPrime(uint n, FoundPrimeCallBack callback);
     }
 }
