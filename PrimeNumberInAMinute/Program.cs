@@ -11,7 +11,7 @@ namespace PrimeNumberInAMinute
     {
 
         static int timeCounter = 0;
-        static uint currentPrime = 0;
+        static uint currentPrime = 2;
 
         static void Main(string[] args)
         {
@@ -25,7 +25,7 @@ namespace PrimeNumberInAMinute
             {
                 FoundPrimeCallBack fPrimeCallBack = new FoundPrimeCallBack(FoundPrimeCallBack);
                 IMaxPrimeNumber maxPrimeNumber = new EratosMaxPrimeNumber();
-                maxPrimeNumber.findMaxPrime(1550000000, fPrimeCallBack);
+                maxPrimeNumber.findMaxPrime(2300000000, fPrimeCallBack);
             });
 
             Thread pt = new Thread(start);
